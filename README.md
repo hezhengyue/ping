@@ -1,0 +1,1 @@
+对ip进行ping测，不通时使用webhook告警
