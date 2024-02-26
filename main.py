@@ -141,7 +141,7 @@ def check_ping(ip, timeout=100, packets=3):
             return False, "超时"
 
 
-def monitor_ips():
+if __name__ == "__main__":
     while True:
         for ip in ip_addresses:
             current_status, message = check_ping(ip)
@@ -164,5 +164,4 @@ def monitor_ips():
         delete_old_logs()
 
 
-# 运行监控函数
-monitor_ips()
+
